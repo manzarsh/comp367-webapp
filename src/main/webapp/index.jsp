@@ -18,6 +18,7 @@
 
 <html>
 <body>
+    <!-- COMP367 CI Pipeline greeting update -->
     <h1><%= greeting %>, <%= name %>, Welcome to COMP367</h1>
 </body>
 </html>
