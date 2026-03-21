@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/manzarsh/comp367-webapp.git'
-            }
-        }
-
         stage('Build Maven') {
             steps {
                 bat 'mvn clean package'
