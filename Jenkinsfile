@@ -5,12 +5,11 @@ pipeline {
         IMAGE_NAME = "manzarsh/lab3app:latest"
     }
 
-    stages {
-        stage('Build Maven') {
-            steps {
-                bat 'mvn clean package'
-            }
-        }
+stage('Build Maven') {
+    steps {
+        bat '"C:\\Tools\\apache-maven-3.9.12\\bin\\mvn.cmd" clean package'
+    }
+}
 
         stage('Docker Login') {
             steps {
